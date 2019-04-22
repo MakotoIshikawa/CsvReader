@@ -39,5 +39,5 @@ class BatchFileFactory(object):
     ### バッチファイル出力
     def __write(self, wf, call_file):
         with wf.open('w') as ws:
-            body = f'cscript "{call_file}"\r\necho %ERRORLEVEL%'
+            body = f'cscript "..\{call_file}"\r\necho %ERRORLEVEL%'
             ws.write(body)
