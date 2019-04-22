@@ -1,5 +1,5 @@
 ﻿jobname,old_id,file
-JT2A40X0D,J0_FTP_IPASS,JABIS\00_転送ツール\PutJabisFTP_IPASS.wsf -
+JT2A40X0D,J0_FTP_IPASS,JABIS\00_転送ツール\PutJabisFTP_IPASS.wsf
 JT2A41X0D,J0_PROC,JABIS\00_転送ツール\DateCheckJabis.vbs
 JT2B40X0D,-,ebs_snapshot.bat
 JT2B41X0D,-,copy_external_vendor_file.bat
@@ -41,7 +41,7 @@ JT2E51XKD,E023,JABIS\00_転送ツール\CreateJabisFile.wsf E0230500
 JT2E51XLD,E024,JABIS\00_転送ツール\CreateJabisFile.wsf E0240500
 JT2H40X0D,A001,JABIS\00_転送ツール\CreateJabisFile.wsf A0010001
 JT2H41X0D,R001,JABIS\90_Rating\R0010001.vbs
-JT2J40X0D,-,os_restart_of_cluster.bat
+JT2J40X0W,-,os_restart_of_cluster.bat
 JT2K40X0D,B001,JABIS\00_転送ツール\CreateJabisFile.wsf B0011100
 JT2K40X1D,B003,JABIS\00_転送ツール\CreateJabisFile.wsf B0031100
 JT2K40X2D,B005,JABIS\00_転送ツール\CreateJabisFile.wsf B0051100
