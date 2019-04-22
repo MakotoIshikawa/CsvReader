@@ -28,6 +28,7 @@
     <Compile Include="commonlib\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MyClass.py" />
     <Compile Include="test1.py">
       <SubType>Code</SubType>
     </Compile>
