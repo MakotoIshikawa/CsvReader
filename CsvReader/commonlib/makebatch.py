@@ -39,5 +39,7 @@ class BatchFileFactory(object):
     ### バッチファイル出力
     def __write(self, wf, call_file):
         with wf.open('w') as ws:
-            body = f'jp1exec CMD.EXE /C "..\{call_file}"\r\njp1exit -ec %ERRORLEVEL%'
-            ws.write(body)
+            ws.write(
+                f'jp1exec CMD.EXE /C "..\{call_file}"\n'
+                'jp1exit -ec %ERRORLEVEL%\n'
+            )
