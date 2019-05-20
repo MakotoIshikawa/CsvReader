@@ -39,7 +39,14 @@ class BatchFileFactory(object):
     ### バッチファイル出力
     def __write(self, wf, call_file):
         with wf.open('w') as ws:
-            ws.write(
-                f'jp1exec CMD.EXE /C "..\{call_file}"\n'
-                'jp1exit -ec %ERRORLEVEL%\n'
-            )
+            if call_file[-3:] == 'ps1':
+                ws.write(
+                    f'jp1exec PowerShell "exit ..\{call_file}" < nul\n'
+                    'jp1exit -ec %ERRORLEVEL%\n'
+                )
+            else :
+                ws.write(
+                    f'jp1exec CMD.EXE /C "..\{call_file}"\n'
+                    'jp1exit -ec %ERRORLEVEL%\n'
+                )
+                
