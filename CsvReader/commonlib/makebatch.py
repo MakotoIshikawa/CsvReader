@@ -49,4 +49,3 @@ class BatchFileFactory(object):
                     f'jp1exec CMD.EXE /C "..\{call_file}"\n'
                     'jp1exit -ec %ERRORLEVEL%\n'
                 )
-                

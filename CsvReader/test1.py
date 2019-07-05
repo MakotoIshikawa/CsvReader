@@ -9,6 +9,8 @@ class Test_test1(unittest.TestCase):
         of.create()
         of.file_name = '..\\data\\jp1_TDB03.csv'
         of.create()
+        of.file_name = '..\\data\\jp1_DWH01.csv'
+        of.create()
 
 if __name__ == '__main__':
     unittest.main()
